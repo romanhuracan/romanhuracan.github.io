@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+<header>
+    <div class="wrapper">
+        <!-- HEADER -->
+        <div class="header fs">
+            <div class="fs__body">
+                <nav class="header-menu">
+                    <!-- LOGOTYPE -->
+                    <div class="logo">
+                        <div class="logo__square">
+                            <p class="logo__letter">М</p>
+                        </div>
+                        <p class="logo__subtitle">Квадратный<br>метр</p>
+                    </div>
+                    <!-- NAVIGATION -->
+                    <button class="links">
+                        <div class="links-container">
+                            <a href="/" class="header-menu__link">Главная</a>
+                            <a href="#about" class="header-menu__link">О нас</a>
+                            <a href="#works" class="header-menu__link">Проекты</a>
+                            <a href="#service" class="header-menu__link">Услуги</a>
+                            <a href="#contacts" class="header-menu__link">Контакты</a>
+                        </div>
+                    </button>
+                </nav>
+                <!-- TEXT -->
+                <div class="header-text">
+                    <h2 class="header-text__title">Время <span>перемен</span></h2>
+                    <p class="header-text__subtitle">Начните с чистого листа</p>
+                    <a href="#service" class="header-text__btn">Вперед</a>
+                </div>
+                <!-- MOUSE ICON -->
+                <div class="mouse"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- ABOUT -->
+    <div id="about" class="wrapper">
+        <div class="about fs">
+            <div class="fs__body">
+                <div class="top">
+                    <h3 class="title">О нас.</h3>
+                    <p class="subtitle">10 лет опыта за спиной.</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-content__item">
+                        <h3 class="about-content__title in-short">Вкратце.</h3>
+                        <p class="about-content__subtitle">Каждый проект уникален и сложен по-своему, от того и решение той или иной задачи предполагает сугубо индивидуальный подход.</p>
+                    </div>
+                    <div class="about-content__item">
+                        <h3 class="about-content__title philosophy">Философия.</h3>
+                        <p class="about-content__subtitle">Ежедневно мы помогаем заказчикам приблизиться к мечте еще на один шаг. Видеть радость в их глазах по итогу - бесценно.</p>
+                    </div>
+                    <div class="about-content__item">
+                        <h3 class="about-content__title target">Цель.</h3>
+                        <p class="about-content__subtitle">Внести ярких красок в вашу жизнь. Делегировать все заботы по строительству/ремонут на себя.</p>
+                    </div>
+                </div>
+                <div class="vertical"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WORKS -->
+    <div id="works" class="wrapper">
+        <section class="works fs">
+            <div class="fs__body">
+                <!-- WORKS TITLE -->
+                <div class="top">
+                    <div class="text">
+                        <h3 class="title">Галерея работ.</h3>
+                        <p class="subtitle">Сделано на совесть.</p>
+                    </div>
+                    <div class="slider-buttons">
+                        <!-- Navigation -->
+                        <button class="swiper-button-prev"></button>
+                        <button class="swiper-button-next"></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider main container -->
+            <div class="slider-container">
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="slide swiper-slide">
+                            <img src="img/slider/1.jpg" alt="">
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="img/slider/1.jpg" alt="">
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="img/slider/1.jpg" alt="">
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="img/slider/1.jpg" alt="">
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="img/slider/1.jpg" alt="">
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="img/slider/1.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="fs__body">
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SERVICE -->
+    <div id="service" class="wrapper">
+        <section class="service fs">
+            <div class="fs__body">
+                <!-- SERVICE TITLE -->
+                <div class="top">
+                    <h3 class="title">Список услуг.</h3>
+                    <p class="subtitle">Все, что нужно - от А до Я.</p>
+                </div>
+                <!-- SERVICE CARDS -->
+                <div class="service-cards">
+                    <a href="#popup-plumbing" class="service-card popup-link">
+                        <p class="service-card__work plumbing">Сантехника</p>
+                    </a>
+                    <a href="#popup-roof" class="service-card popup-link">
+                        <p class="service-card__work roof">Кровля</p>
+                    </a>
+                    <a href="#popup-landscape" class="service-card popup-link">
+                        <p class="service-card__work landscape">Ландшафт</p>
+                    </a>
+                    <a href="#popup-stone" class="service-card popup-link">
+                        <p class="service-card__work stone">Камень</p>
+                    </a>
+                    <a href="#popup-design" class="service-card popup-link">
+                        <p class="service-card__work design">Проектирование</p>
+                    </a>
+                    <a href="#popup-electrical" class="service-card popup-link">
+                        <p class="service-card__work electrical">Электромонтаж</p>
+                    </a>
+                    <a href="#popup-facade" class="service-card popup-link">
+                        <p class="service-card__work facade">Фасад</p>
+                    </a>
+                    <a href="#popup-more" class="service-card popup-link">
+                        <p class="service-card__work">Что-то еще</p>
+                    </a>
+                    <a href="#popup-more-more" class="service-card popup-link">
+                        <p class="service-card__work">Что-то еще</p>
+                    </a>
+                </div>
+                <!-- VERTICAL LINE -->
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CONTACTS -->
+    <div id="contacts" class="contacts">
+        <div class="fs__body">
+            <div class="contacts-content">
+                <div class="social-media">
+                    <a class="social-media__item inst"></a>
+                    <a class="social-media__item vk"></a>
+                    <a class="social-media__item wa"></a>
+                    <a class="social-media__item tg"></a>
+                    <a class="social-media__item email"></a>
+                </div>
+                <button class="callback">Перезвоните мне!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM FOR SEND MESSAGE -->
+    <!-- <div class="form fs">
+        <div class="fs__body">
+           
+        </div>
+    </div> -->
+
+    <div class="form popup wrapper">
+        <div class="fs">
+            <div class="fs__body">
+                <form action="" id="form" class="form__body" method="POST">
+                    <div class="form-text">
+                        <h3 class="form__title">Обратный звонок</h3>
+                        <button type="button" class="closeBtn">X</button>
+                    </div>
+                    <div class="form__item">
+                        <label for="formName">Имя: *</label>
+                        <input type="text" id="formName" class="form__input" required>
+                    </div>
+                    <div class="form__item">
+                        <label for="formEmail">Email:</label>
+                        <input type="email" id="formEmail" class="form__input" required>
+                    </div>
+                    <div class="form__item">
+                        <label for="formPhone">Телефон: *</label>
+                        <input type="phone" id="formPhone" class="form__input" required>
+                    </div>
+                    <div class="form__item">
+                        <label for="formMessage">Сообщение:</label>
+                        <textarea id="formMessage" class="form__input"></textarea>
+                    </div>
+                    <div class="form__item">
+                        <div class="checkbox">
+                            <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input">
+                            <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных данных в соответствии с условиями*</span></label>
+                        </div>
+                    </div>
+                    <div class="successfulSubmission">
+                        <h3 class="successfulSubmission__title">Ваша заявка успешно отправлена</h3>
+                    </div>
+                    <button class="form__button" id="formButton" type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- POPUP PLUMBING -->
+    <div id="popup-plumbing" class="popup wrapper">
+        <div class="fs">
+            <div class="fs__body">
+                <div class="top">
+                    <div class="text">
+                        <h3 class="title">Сантехника.</h3>
+                        <p class="subtitle">Все цены являются предварительными.</p>
+                    </div>
+                    <button class="closePopUpBtn">X</button>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Наименование</th>
+                                <th>Описание</th>
+                                <th>Объем</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            ...
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP ROOF -->
+    <div id="popup-roof" class="popup wrapper">
+        <div class="fs">
+            <div class="fs__body">
+                <div class="top">
+                    <div class="text">
+                        <h3 class="title">Кровля.</h3>
+                        <p class="subtitle">Все цены являются предварительными.</p>
+                    </div>
+                    <button class="closePopUpBtn">X</button>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Наименование</th>
+                                <th>Описание</th>
+                                <th>Объем</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            ...
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP LANDSCAPE -->
+    <div id="popup-landscape" class="popup wrapper">
+        <div class="fs">
+            <div class="fs__body">
+                <div class="top">
+                    <div class="text">
+                        <h3 class="title">Ландшафтный дизайн.</h3>
+                        <p class="subtitle">Все цены являются предварительными.</p>
+                    </div>
+                    <button class="closePopUpBtn">X</button>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Наименование</th>
+                                <th>Описание</th>
+                                <th>Объем</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            ...
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP STONE -->
+    <div id="popup-stone" class="popup wrapper">
+        <div class="fs">
+            <div class="fs__body">
+                <div class="top">
+                    <div class="text">
+                        <h3 class="title">Каменные работы.</h3>
+                        <p class="subtitle">Все цены являются предварительными.</p>
+                    </div>
+                    <button class="closePopUpBtn">X</button>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Наименование</th>
+                                <th>Описание</th>
+                                <th>Объем</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            ...
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP DESIGN -->
+    <div id="popup-design" class="popup wrapper">
+        <div class="fs">
+            <div class="fs__body">
+                <div class="top">
+                    <div class="text">
+                        <h3 class="title">Проектирование.</h3>
+                        <p class="subtitle">Все цены являются предварительными.</p>
+                    </div>
+                    <button class="closePopUpBtn">X</button>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Наименование</th>
+                                <th>Описание</th>
+                                <th>Объем</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            ...
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP ELECTRICAL -->
+    <div id="popup-electrical" class="popup wrapper">
+        <div class="fs">
+            <div class="fs__body">
+                <div class="top">
+                    <div class="text">
+                        <h3 class="title">Электромонтаж.</h3>
+                        <p class="subtitle">Все цены являются предварительными.</p>
+                    </div>
+                    <button class="closePopUpBtn">X</button>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Наименование</th>
+                                <th>Описание</th>
+                                <th>Объем</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            ...
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP FACADE -->
+    <div id="popup-facade" class="popup wrapper">
+        <div class="fs">
+            <div class="fs__body">
+                <div class="top">
+                    <div class="text">
+                        <h3 class="title">Фасадные работы.</h3>
+                        <p class="subtitle">Все цены являются предварительными.</p>
+                    </div>
+                    <button class="closePopUpBtn">X</button>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Наименование</th>
+                                <th>Описание</th>
+                                <th>Объем</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            ...
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP MORE -->
+    <div id="popup-more" class="popup wrapper">
+        <div class="fs">
+            <div class="fs__body">
+                <div class="top">
+                    <div class="text">
+                        <h3 class="title">Что-то еще.</h3>
+                        <p class="subtitle">Все цены являются предварительными.</p>
+                    </div>
+                    <button class="closePopUpBtn">X</button>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Наименование</th>
+                                <th>Описание</th>
+                                <th>Объем</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            ...
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP MORE MORE -->
+    <div id="popup-more-more" class="popup wrapper">
+        <div class="fs">
+            <div class="fs__body">
+                <div class="top">
+                    <div class="text">
+                        <h3 class="title">Что-то еще 2.</h3>
+                        <p class="subtitle">Все цены являются предварительными.</p>
+                    </div>
+                    <button class="closePopUpBtn">X</button>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Наименование</th>
+                                <th>Описание</th>
+                                <th>Объем</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria</td>
+                                <td>Reeves</td>
+                                <td>67439</td>
+                                <td>10/18/1985</td>
+                            </tr>
+                            ...
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    Все права защищены
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/form.js"></script>
+<script src="js/popup.js" type="module"></script>
+</body>
+</html>
