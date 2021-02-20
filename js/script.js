@@ -8,9 +8,9 @@ new Swiper('.swiper-container', {
     slidesPerView: 3,
     centeredSlides: true,
     spaceBetween: 30,
-    // autoplay: {
-    //   delay: 3000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
 
     pagination: {
         el: '.swiper-pagination',
