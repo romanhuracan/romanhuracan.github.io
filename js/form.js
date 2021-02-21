@@ -9,7 +9,7 @@ let closeFormBtn = document.querySelector(".closeBtn");
 let callBackBtn = document.querySelector(".callback");
 
 // Сам объект формы
-let contactForm = document.querySelector(".form");
+let contactForm = document.querySelector(".modal");
 
 // Блок успешной отправки формы
 let successfulSubmission = document.querySelector(".successfulSubmission");
@@ -52,8 +52,6 @@ formButton.addEventListener("click", function (e) {
         }
 
         response.json().then(function (data) {
-            
-            // console.log(data);
             vision(successfulSubmission, "on");
             setTimeout(vision, 3000, successfulSubmission, "off");
         })
@@ -66,14 +64,19 @@ formButton.addEventListener("click", function (e) {
 callBackBtn.addEventListener("click", function () {
     vision(contactForm, "on");
     body.style.overflowY = "hidden";
-    contactForm.style.overflowY = "auto;"
 });
 
 // Закрываем контактную форму при нажатии на крестик
-closeFormBtn.addEventListener("click", function () {
+closeFormBtn.addEventListener("click", function (e) {
     vision(contactForm, "off");
     body.style.overflowY = "visible";
-    contactForm.style.overflowY = "hidden";
+});
+
+contactForm.addEventListener("click", function(e) {
+    if (e.target === document.querySelector(".modal")) {
+        vision(contactForm, "off");
+        body.style.overflowY = "visible";
+    }
 });
 
 // Показывает или скрывает объект с помощью
