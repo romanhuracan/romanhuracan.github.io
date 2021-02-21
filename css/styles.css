@@ -95,10 +95,8 @@ html, body {
 
 /* ======= HEADER MENU ======= */
 .header-menu {
-    padding-top: 20px;
     display: flex;
     align-items: center;
-    margin-bottom: auto;
     justify-content: space-between;
     width: inherit;
 }
@@ -149,12 +147,14 @@ html, body {
     text-align: center;
     color: var(--white-color);
     margin-bottom: auto;
+    margin-top: auto;
 }
 
 .header-text__title {
     font-size: 72px;
     line-height: 1;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .header-text__title span {
@@ -163,13 +163,12 @@ html, body {
 }
 
 .header-text__subtitle {
-    margin-top: 20px;
     font-size: 20px;
+    margin-bottom: 40px;
 }
 
 .header-text__btn {
     display: inline-block;
-    margin-top: 40px;
     color: var(--white-color);
     padding: 15px 40px;
     border: 3px solid var(--green-color);
@@ -193,10 +192,7 @@ html, body {
     position: relative;
     color: var(--white-color);
     margin-top: 70px;
-}
-
-.service .top {
-    margin: 70px 0 auto;
+    margin-bottom: 20px;
 }
 
 .title {
@@ -217,7 +213,7 @@ html, body {
     align-items: flex-start;
     flex-wrap: wrap;
     width: inherit;
-    padding: 20px 0;
+    margin-top: auto;
     margin-bottom: auto;
 }
 
@@ -254,6 +250,7 @@ html, body {
     width: 3px;
     height: 50px;
     background-color: var(--green-color);
+    margin-top: 20px;
 }
 
 .title:before {
@@ -377,7 +374,6 @@ html, body {
 }
 
 .slider-container .swiper-container {
-    margin: 20px 0;
     padding-bottom: 50px;
 }
 
@@ -633,7 +629,7 @@ html, body {
     box-shadow: 0px 0px 10px 0px var(--green-color);
 }
 
-/* ======= FORM FOR SEND MESSAGE ======= */
+/* ======= MODAL WINDOW ======= */
 .modal {
     opacity: 0;
     visibility: hidden;
@@ -656,7 +652,72 @@ html, body {
     margin: auto 0;
     padding: 20px;
 }
+.modal.popup-service {
+    background-color: rgb(16, 16, 16);
+}
+.popup-service .modal-content {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.popup-service .top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.closePopUpBtn {
+    display: inline-block;
+    border: 3px solid red;
+    font-size: 32px;
+    font-weight: bold;
+    color: red;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 5px solid var(--white-color);
+	border-top: 5px solid var(--white-color);
+    border-bottom: 3px solid var(--white-color);
+    border-collapse: collapse; 
+	outline: 3px solid #ffd300;
+	font-size: 16px;
+    background: var(--white-color);
+}
+.table th {
+	font-weight: bold;
+	padding: 7px;
+	background: #ffd300;
+	border: none;
+	text-align: left;
+	font-size: 16px;
+	border-top: 3px solid var(--white-color);
+	border-bottom: 3px solid #ffd300;
+}
+.table td {
+	padding: 7px;
+	border: none;
+	border-top: 3px solid var(--white-color);
+	border-bottom: 3px solid var(--white-color);
+	font-size: 16px;
+}
+.table tbody tr:nth-child(even){
+	background: #f8f8f8!important;
+}
+
+/* ======= FORM FOR SEND MESSAGE ======= */
 .form__body {
+    position: relative;
     padding: 40px;
     max-width: 500px;
     border: 3px solid var(--green-color);
@@ -671,7 +732,7 @@ html, body {
     align-items: center;
     margin-bottom: 20px;
 }
-/* ---- Блок успешной отправки заявки на почту ---- */
+/* ---- SUCCESSFULL SUBMISSION ---- */
 .successfulSubmission {
     position: absolute;
     top: 0;
@@ -800,72 +861,6 @@ textarea.form__input {
     -webkit-box-shadow: 0px 0px 10px 0px var(--green-color);
     -moz-box-shadow: 0px 0px 10px 0px var(--green-color);
     box-shadow: 0px 0px 10px 0px var(--green-color);
-}
-
-/* ======= POPUPS ======= */
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 102;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .2s ease-in-out;
-}
-
-.popup .top {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.closePopUpBtn {
-    display: inline-block;
-    border: 3px solid red;
-    font-size: 32px;
-    font-weight: bold;
-    color: red;
-}
-
-.table-container {
-    width: 100%;
-    min-height: 100px;
-    overflow-x: auto;
-    margin-top: 20px;
-}
-
-.table {
-	width: 100%;
-	margin-bottom: 20px;
-	border: 5px solid var(--white-color);
-	border-top: 5px solid var(--white-color);
-    border-bottom: 3px solid var(--white-color);
-    border-collapse: collapse; 
-	outline: 3px solid #ffd300;
-	font-size: 16px;
-    background: var(--white-color);
-}
-.table th {
-	font-weight: bold;
-	padding: 7px;
-	background: #ffd300;
-	border: none;
-	text-align: left;
-	font-size: 16px;
-	border-top: 3px solid var(--white-color);
-	border-bottom: 3px solid #ffd300;
-}
-.table td {
-	padding: 7px;
-	border: none;
-	border-top: 3px solid var(--white-color);
-	border-bottom: 3px solid var(--white-color);
-	font-size: 16px;
-}
-.table tbody tr:nth-child(even){
-	background: #f8f8f8!important;
 }
 
 

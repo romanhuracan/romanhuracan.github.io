@@ -1,15 +1,4 @@
-function popUpCondition(popup, condition) {
-    // Показывает или скрывает popup с помощью
-    // CSS-свойств visibility и opacity
-    if (condition === "close") {
-    popup.style.visibility = "hidden";
-    popup.style.opacity = 0;
-    }
-    else if (condition === "open") {
-        popup.style.visibility = "visible";
-        popup.style.opacity = 1;
-    }
-}
+import {vision} from "./form.js";
 
 const popUpLinks = document.querySelectorAll(".popup-link");
 const body = document.querySelector("body");
@@ -21,7 +10,7 @@ if (popUpLinks.length > 0) {
             popUpLink.addEventListener("click", function (e) {
                 const popUpName = popUpLink.getAttribute("href").replace("href", "");
                 const currentPopUp = document.querySelector(popUpName);
-                popUpCondition(currentPopUp, "open");
+                vision(currentPopUp, "on");
                 body.style.overflowY = "hidden";
                 e.preventDefault();
             });
@@ -35,9 +24,12 @@ if (closePopUpBtns.length > 0) {
         const closePopUpBtn = closePopUpBtns[i];
 
         closePopUpBtn.addEventListener("click", function (e) {
-            popUpCondition(closePopUpBtn.closest(".popup"), "close");
+            vision(closePopUpBtn.closest(".modal"), "off");
             body.style.overflowY = "visible";
             e.preventDefault();
         });
     }
 }
+
+const popups = document.querySelectorAll(".modal");
+console.log(popups);

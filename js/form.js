@@ -1,9 +1,19 @@
+export function vision(obj, vision) {
+    // Показывает или скрывает объект с помощью
+    // CSS-свойств visibility и opacity
+    if (vision === "off") {
+    obj.style.visibility = "hidden";
+    obj.style.opacity = 0;
+    }
+    else if (vision === "on") {
+        obj.style.visibility = "visible";
+        obj.style.opacity = 1;
+    }
+}
+
 // Получаем объект - кнопка для отправки формы
 let formButton = document.getElementById("formButton");
 const body = document.querySelector("body");
-
-// Кнопка для закрытия формы
-let closeFormBtn = document.querySelector(".closeBtn");
 
 // Кнопка позвоните мне! для открытия формы
 let callBackBtn = document.querySelector(".callback");
@@ -66,28 +76,9 @@ callBackBtn.addEventListener("click", function () {
     body.style.overflowY = "hidden";
 });
 
-// Закрываем контактную форму при нажатии на крестик
-closeFormBtn.addEventListener("click", function (e) {
-    vision(contactForm, "off");
-    body.style.overflowY = "visible";
-});
-
 contactForm.addEventListener("click", function(e) {
     if (e.target === document.querySelector(".modal")) {
         vision(contactForm, "off");
         body.style.overflowY = "visible";
     }
 });
-
-// Показывает или скрывает объект с помощью
-// CSS-свойств visibility и opacity
-function vision(obj, vision) {
-    if (vision === "off") {
-    obj.style.visibility = "hidden";
-    obj.style.opacity = 0;
-    }
-    else if (vision === "on") {
-        obj.style.visibility = "visible";
-        obj.style.opacity = 1;
-    }
-}
