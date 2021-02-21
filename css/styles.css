@@ -66,11 +66,19 @@ html, body {
 /* ======= HEADER ======= */
 .header {
     background: url('../img/bg.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
+
+.header.bg-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.header.bg-fixed {
+    background-attachment: fixed;
+}
+
 
 .mouse {
     position: relative;
@@ -893,10 +901,6 @@ textarea.form__input {
 @media (max-width: 991px) {
     .header {
         background: url('../img/bg-mobile.jpg');
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
     }
 
     .service-cards {

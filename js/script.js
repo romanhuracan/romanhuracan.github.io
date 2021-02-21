@@ -49,3 +49,12 @@ burger.addEventListener("click", function(){
   let menu = document.querySelector(".links-container");
   menu.style.display = "flex";
 });
+
+// Fix bag with background on mobile devices
+const device = navigator.userAgent.toLowerCase();
+const mob = device.match(/android|webos|iphone|ipad|ipod|iemobile|opera mini/);
+const header = document.querySelector(".header");
+
+if (mob) {
+  header.classList.remove("bg-fixed");
+}
