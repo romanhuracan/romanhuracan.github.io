@@ -891,6 +891,14 @@ textarea.form__input {
     }
 }
 @media (max-width: 991px) {
+    .header {
+        background: url('../img/bg-mobile.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
     .service-cards {
         align-self: center;
     }
