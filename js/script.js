@@ -47,7 +47,21 @@ let burger = document.querySelector(".links");
 
 burger.addEventListener("click", function(){
   let menu = document.querySelector(".links-container");
-  menu.style.display = "flex";
+  if (menu.style.display == "none"){
+    menu.style.display = "flex";
+    burger.style.background = "red";
+    // Если мобильное меню открыто, то при нажатии на ссылку нужно его скрыть.
+    let links = document.querySelectorAll(".header-menu__link");
+    links.forEach(element => {
+      element.addEventListener("click", function(){
+        menu.style.display = "none";
+        burger.style.background = "var(--green-color)";
+      });
+    });
+  } else {
+    menu.style.display = "none";
+    burger.style.background = "var(--green-color)";
+  }
 });
 
 // Fix bag with background on mobile devices
